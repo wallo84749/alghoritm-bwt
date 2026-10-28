@@ -1,15 +1,20 @@
 str = input("write some string: ")
-print(f"your string: {str}")
 
+ris = ""
 strBWT = str + "$"
+strList = []
 strLenght = len(str)
 
-#print(strBWT)
-
 """
-for char in str:
-    print(char)
+ciao$
+iao$c
+ao$ci
+o$cia
+$ciao
 """
 
-for char in strBWT :
-    print(char[::-1])
+print(strBWT)
+for i in range(strLenght):
+    rmFrstElm = strBWT[i + 1:]
+    strElms = str[:i + 1]
+    print(rmFrstElm  + strElms)
