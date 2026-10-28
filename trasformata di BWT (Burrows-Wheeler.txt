@@ -1,0 +1,23 @@
+trasformata di BWT (Burrows-Wheeler) 
+esempio:
+BANANA
+primo passaggio:
+B A N A N A $( aggiunta del dollaro ) 
+e poi si calcola la rotazione del dollaro:
+(il dollaro ha sempre la precedenza)
+banana$
+anana$b
+nana$ba
+ana$ban
+na$bana
+a$banan
+$banana
+poi mettiamo tutto in ordine:
+$BANANA
+A$BANAN
+ANA$BAN
+ANANA$B
+BANANA%
+NA$BANA
+NANA$BA
+e la trasformazione di BWT è l'ultima riga di tutto 
