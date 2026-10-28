@@ -17,4 +17,6 @@ print(strBWT)
 for i in range(strLenght):
     rmFrstElm = strBWT[i + 1:]
     strElms = str[:i + 1]
-    print(rmFrstElm  + strElms)
+    BWT_elms = rmFrstElm  + strElms
+    strList.append(BWT_elms)
+print(strList)
