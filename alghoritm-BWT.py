@@ -2,7 +2,7 @@ str = input("write some string: ")
 
 ris = ""
 strBWT = str + "$"
-strList = []
+strList = [strBWT]
 strLenght = len(str)
 
 """
@@ -13,10 +13,9 @@ o$cia
 $ciao
 """
 
-print(strBWT)
 for i in range(strLenght):
     rmFrstElm = strBWT[i + 1:]
-    strElms = str[:i + 1]
+    strElms = strBWT[:i + 1]
     BWT_elms = rmFrstElm  + strElms
     strList.append(BWT_elms)
 print(strList)
