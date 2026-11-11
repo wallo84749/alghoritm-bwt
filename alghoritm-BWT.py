@@ -1,3 +1,20 @@
+def quickSort(lista):
+    if len(lista) <= 1:
+        return list
+    
+    pivot = list[-1]
+
+    left = []
+    right = []
+
+    for elemento in lista[:-1]:
+        if elemento < pivot:
+            left.append(elemento)
+        else:
+            right.append(elemento)
+
+    return quickSort(left) + [pivot] + quickSort(right)
+
 str = input("write some string: ")
 
 ris = ""
@@ -15,17 +32,10 @@ for i in range(strLenght - 1):
 print("rotazione completa dell'algoritmo: ", strList)  
 
 
-for i in range(len(strList)):
+strList = quickSort(strList)
 
-    for j in range(len(strList) - 1 - i):
-
-        if strList[j] > strList[j + 1]:
-
-            temp = strList[j]
-            strList[j] = strList[j + 1]
-            strList[j + 1] = temp
-        
 for elemento in strList:
     ris += elemento[-1]
+    
 print("stringa con implementazione dell'algoritmo: ", ris)
 

@@ -17,7 +17,7 @@ $BANANA
 A$BANAN
 ANA$BAN
 ANANA$B
-BANANA%
+BANANA$
 NA$BANA
 NANA$BA
 e la trasformazione di BWT è l'ultima riga di tutto 
