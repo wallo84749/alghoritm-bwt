@@ -10,8 +10,8 @@ with sck.socket(sck.AF_INET, sck.SOCK_STREAM) as client:
     print("connesione stabilita")
 
     client.sendall(messaggio.encode())
-    dati = client.recv(1024)   #--> acneh questa autobloccante 
+    dati = client.recv(1024) 
 
     print(f"risposta del server: {dati.decode()}")
 
-print("client terminato")
+print("the client comunication is ended")
